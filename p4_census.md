@@ -12,21 +12,28 @@ The challenge is to explore how different encoding choices — from sparse one-h
 - Analyze which variables have a meaningful order (e.g., `education`)  
 - Implement and compare:
   - **One-hot encoding**:
-    $$
-    \text{OneHot}_k(x) = \mathbb{1}\{x = c_k\}
-    $$
+    
+  $$
+  \text{OneHot}_k(x) = \mathbb{1}\{x = c_k\}
+  $$
+  
   - **Ordinal encoding**:
-    $$
-    \text{Ordinal}(x = c_k) = \text{rank}(c_k)
-    $$
+    
+  $$
+  \text{Ordinal}(x = c_k) = \text{rank}(c_k)
+  $$
+    
   - **Frequency encoding**:
-    $$
-    \text{Freq}(x = c_k) = \frac{\#(x = c_k)}{N}
-    $$
+    
+  $$
+  \text{Freq}(x = c_k) = \frac{\text{count}(x = c_k)}{N}
+  $$
+    
   - **Target encoding**:
-    $$
-    \text{Target}(x = c_k) = \mathbb{E}[y \mid x = c_k]
-    $$
+    
+  $$
+  \text{Target}(x = c_k) = \mathbb{E}[y \mid x = c_k]
+  $$
 
 - Implement **leakage control** for target encoding using cross-validation:
   - Encode each fold using target statistics from other folds (not including the target of the encoded point)
@@ -39,6 +46,7 @@ The challenge is to explore how different encoding choices — from sparse one-h
   - [https://archive.ics.uci.edu/ml/datasets/adult](https://archive.ics.uci.edu/ml/datasets/adult)
 
 Target variable:
+
 $$
 y =
 \begin{cases}
@@ -67,9 +75,11 @@ $$
 ### 🚀 Optional Extensions
 
 - Use smoothed target encoding:
-  $$
-  \text{SmoothTarget}(c) = \frac{n_c \cdot \bar{y}_c + \alpha \cdot \bar{y}}{n_c + \alpha}
-  $$
+  
+$$
+\text{SmoothTarget}(c) = \frac{n_c \cdot \bar{y}_c + \alpha \cdot \bar{y}}{n_c + \alpha}
+$$
+  
 - Apply Lasso regression to compare sparsity across encodings  
 - Visualize encoded feature space with PCA or UMAP  
 - Analyze subgroup performance (e.g., gender or race)
