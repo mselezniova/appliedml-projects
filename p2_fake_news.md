@@ -1,4 +1,4 @@
-## Project 2: *Fake News Detection using Word Frequencies*
+## Project 2: *Fake News Detection Using Word Frequencies*
 
 ### 🧠 Motivation
 
