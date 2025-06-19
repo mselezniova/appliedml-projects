@@ -33,6 +33,7 @@ Each row includes open, high, low, close, and volume (OHLCV) data. You may optio
 > 0 & \text{if } r_{t+1} \leq 0
 > \end{cases}
 > $$
+> 
 > where $r_{t+1} = \frac{P_{t+1}^{\text{close}} - P_t^{\text{close}}}{P_t^{\text{close}}}$
 
 ### 🛠️ Suggested Models / Tools
