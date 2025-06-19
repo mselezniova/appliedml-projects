@@ -5,7 +5,7 @@
 In class, we introduced **Lasso regression** as a convex objective that induces sparsity via $\ell_1$ regularization:
 
 $$
-\min_{\mathbf{w} \in \mathbb{R}^d} \left\{ \frac{1}{2n} \|\mathbf{Xw} - \mathbf{y}\|_2^2 + \lambda \|\mathbf{w}\|_1 \right\}
+\min_{\mathbf{w} \in \mathbb{R}^d} \left\\{ \frac{1}{2n} \|\mathbf{Xw} - \mathbf{y}\|_2^2 + \lambda \|\mathbf{w}\|_1 \right\\}
 $$
 
 This problem is nonsmooth due to the $\|\mathbf{w}\|_1$ term, which complicates optimization. We implemented a **basic subgradient descent method**, which often converges slowly and is highly sensitive to learning rate.
