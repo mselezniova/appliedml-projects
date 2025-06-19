@@ -5,6 +5,7 @@
 Weight initialization plays a central role in training deep neural networks. Poor initialization can lead to vanishing or exploding activations and gradients, making learning unstable or impossible. This project focuses on analyzing the statistical behavior of MLPs under different initialization schemes, with particular attention to signal propagation and the onset of instability.
 
 In the course, we used He initialization for ReLU networks:
+
 $$
 W^\ell_{ij}\sim \mathcal{N}\left(0, \frac{2}{\text{fan-out}}\right)
 $$
