@@ -1,4 +1,4 @@
-## Project 8: *Text Classification with String Kernels*
+## Project 8: *Spam Detection with String Kernels*
 
 ### 🧠 Motivation
 
