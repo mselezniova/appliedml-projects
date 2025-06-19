@@ -30,11 +30,18 @@ Let $D = \{d_1, d_2, \dots, d_n\}$ be the collection of documents.
 
 For a term $t$ and a document $d$, define:
 
-- **Term Frequency (TF)**:\
-  $$\text{tf}(t, d) = \frac{\text{count of } t \text{ in } d}{\text{total number of terms in } d}$$
+- **Term Frequency (TF)**:
 
-- **Inverse Document Frequency (IDF)**:\
-  $$\text{idf}(t, D) = \log\left(\frac{n}{1 + |\{d_i \in D : t \in d_i\}|}\right)$$
+$$
+\text{tf}(t, d) = \frac{\text{count of } t \text{ in } d}{\text{total number of terms in } d}
+$$
+
+
+- **Inverse Document Frequency (IDF)**:
+
+$$
+\text{idf}(t, D) = \log\left(\frac{n}{1 + |\{d_i \in D : t \in d_i\}|}\right)
+$$
 
 Then the **TF-IDF score** for term $t$ in document $d$ is:
   $$
