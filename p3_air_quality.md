@@ -41,11 +41,8 @@ y_t = \beta_1 y_{t-1} + \beta_2 y_{t-2} + \dots + \beta_k y_{t-k} + \varepsilon_
 $$
 
 - **Ridge regression** (for high-dimensional lag settings)  
-- **Naive baseline**:
+- **Naive baseline**: $`\hat{y}_t = y_{t-1}`$
 
-$$
-\hat{y}_t = y_{t-1}
-$$
 
 ### ✅ Minimum Requirements
 
