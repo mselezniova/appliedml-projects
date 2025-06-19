@@ -31,8 +31,8 @@ Create a separate test set $(X_{\text{test}}, y_{\text{test}})$ to evaluate gene
 
 - Simulate linear regression problems with $n = 100$ and vary $d$, e.g. from 10 to 300  
 - For each $d$, generate training data, fit the model, and compute:
-  - Training error: $\|X \hat{\beta} - y\|_2^2 / n$  
-  - Test error: $\|X_{\text{test}} \hat{\beta} - y_{\text{test}}\|_2^2 / n_{\text{test}}$  
+  - Training error: $\\|X \hat{\beta} - y\\|_2^2 / n$  
+  - Test error: $` \|X_{\text{test}} \hat{\beta} - y_{\text{test}} \|_2^2 / n_{\text{test}}`$  
 - Plot both errors against model dimension $d$  
 - Clearly mark the interpolation threshold ($d = n$) and explain observed behavior  
 - Repeat for different noise levels $\sigma$ and discuss trends  
